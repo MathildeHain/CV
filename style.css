@@ -244,3 +244,19 @@ h3 > i {
         margin: 5% 2% 0 5%;
     }
 }
+
+@media all and (max-width: 450px) {
+
+    .bloc_droit > h3 {
+        font-size: 100%;
+    }
+
+    .puce {
+        margin: 6% 2% 0 5%;
+    }
+
+    .recommandation {
+        flex-direction: column;
+        text-align: center;
+    }
+}
