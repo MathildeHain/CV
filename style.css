@@ -171,7 +171,6 @@ h3 > i {
 }
 
 /*Partie responsive*/
-/* Partie responsive */
 
 @media all and (max-width: 800px) {
 
@@ -193,12 +192,12 @@ h3 > i {
         flex-direction: column-reverse;
     }
 
-    .contenu {
+    .bloc_droit {
         width: 90%;
         margin: auto;
     }
 
-    .lisere {
+    .bloc_gauche {
         width: 100%;
     }
 
@@ -224,9 +223,24 @@ h3 > i {
         padding: 8% 15% 8% 15%;
     }
 
-    .lisere h3 {
+    .bloc_gauche h3 {
         border-right: none;
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    h1 {
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    .puce {
+        margin: 5% 2% 0 5%;
     }
 }
