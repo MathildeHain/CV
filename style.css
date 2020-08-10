@@ -1,0 +1,8 @@
+/* Partie desktop */
+
+body {
+    font-family: arial, serif, sans-serif;
+    border: 1px solid #607D8B;
+    margin: auto;
+    max-width: 900px;
+}
