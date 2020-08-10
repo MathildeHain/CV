@@ -118,3 +118,54 @@ a {
     color: #fff;
     margin: auto;
 }
+
+/*BLOC DROIT*/
+.bloc_droit {
+    width: 65%;
+    padding: 3.5% 0 2% 0;
+    color: #455A64;
+}
+
+    .bloc_droit > h3 {
+        color: #000;
+        border-bottom: 1.3px solid #336699;
+        padding-bottom: 1%;
+        width: 90%;
+        margin: auto;
+    }
+
+h3 > i {
+    color: #455A64;
+    padding-right: 3%;
+}
+
+.formation, .experience_professionnelle {
+    padding: 2% 0 2% 0;
+}
+
+.mise_en_page {
+    display: flex;
+}
+
+.puce {
+    margin: 4% 2% 0 5%;
+}
+
+.annee {
+    margin: 1% 0 0 1%;
+}
+
+.etablissement {
+    padding-left: 15%;
+    width: 300px;
+}
+
+.taches {
+    font-size: 92%;
+    line-height: 1.5;
+}
+
+.recommandation {
+    display: flex;
+    justify-content: space-around;
+}
