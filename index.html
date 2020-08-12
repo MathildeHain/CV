@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="description" content="CV Mathilde Hain étudiante en développement web">
+    <link type="text/css" rel="stylesheet" href="style2.css">
     <script src="https://kit.fontawesome.com/49e5819252.js" crossorigin="anonymous"></script>
     <title>CV Mathilde Hain</title>
 </head>
 <body>
-    <header>
-        <section class="photo">
-            <div class="photomathilde">
-                <img src="photo.png" class="taille_photo" />
+    
+    <div>
+        <header>
+            <div class="photo">
+                <div class="photomathilde">
+                    <img src="photo.png" class="taille_photo" alt="photo développeuse" />
+                </div>
             </div>
-        </section>
 
-        <section class="titre">
-            <h1><span>MATHILDE</span> HAIN</h1>
-            <h2><span>Etudi</span>ante en développement web</h2>
-        </section>
-    </header>
+            <div class="titre">
+                <h1><span class="color">MATHILDE</span> HAIN<br>
+                    <span class="etudiante"><span class="border">Etudi</span>ante en développement web</span></h1>
+            </div>
+        </header>
 
-    <main>
-        <div class=bloc_gauche>
-            <section class="contact">
-                <h3>CONTACT</h3>
+        <nav class="menu">
+            <h2>MENU</h2>
+            <a href="#contact">Contact</a> |
+            <a href="#a_propos_de_moi">A propos de moi</a> |
+            <a href="#loisirs">Loisirs</a> |
+            <a href="#recommandation">Recommandations</a>
+        </nav>
+    </div>
+
+    <div class="contenu">
+        <aside>
+            <div class="contact">
+                <h2 id="contact">CONTACT</h2>
                 <address>
                     Adresse<br>
                     4 Allée des Tilleuls 27110 Sainte Opportune du Bosc<br><br>
@@ -35,45 +47,44 @@
                     Site web<br />
                     <a href="https://github.com/MathildeHain" target="_blank">GitHub.com/MathildeHain</a><br /><br />
                 </address>
-            </section>
+            </div>
 
-            <section id="a_propos_de_moi">
-                <h3>À PROPOS DE MOI</h3>
-                <section class="informations">
+            <div class="a_propos_de_moi">
+                <h2 id="a_propos_de_moi">À PROPOS DE MOI</h2>
+                <div class="informations">
                     <p>Issue d'un baccalauréat Sciences et Technologies de Laboratoire, j'ai décidé de me réorienter vers une formation en développement web.
-                </section>
-            </section>
+                </div>
+            </div>
 
-            <section id="loisirs">
-                <h3>LOISIRS</h3>
+            <div class="loisirs">
+                <h2 id="loisirs">LOISIRS</h2>
                 <div class="icones">
                     <div class="icone"><i class="fas fa-horse-head"></i></div>
                     <div class="icone"><i class="fas fa-plane-departure"></i></div>
                     <div class="icone"><i class="fas fa-leaf"></i></div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </aside>
 
-        <div class="bloc_droit">
-
-            <h3><i class="fas fa-graduation-cap fa-lg"></i>FORMATION</h3>
-            <section class="formation">
+        <main>
+            <h2><i class="fas fa-graduation-cap fa-lg"></i>FORMATION</h2>
+            <div class="formation">
                 <div class="mise_en_page">
                     <div class="puce">
                         <i class="far fa-dot-circle fa-xs"></i>
                     </div>
                     <div class="annee">
-                        <p>2020<br />Rouen</p>
+                        <p>2020 - Rouen</p>
                     </div>
                     <div class="etablissement">
-                        <h4>OPENCLASSROOMS</h4>
-                        <p>Parcours Développeur web</p>
+                        <h3>OPENCLASSROOMS</h3>
+                        <h4>Parcours Développeur web</h4>
                         <div class="taches">
-                            <p>
-                                Assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques<br />
-                                Intégrer des contenus textes, images, sons, vidéo dans le code HTML5<br />
-                                Respecter les normes d’accessibilité et de référencement du W3C.
-                            </p>
+                            <ul>
+                                <li>Assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques</li>
+                                <li>Intégrer des contenus textes, images, sons, vidéo dans le code HTML5</li>
+                                <li>Respecter les normes d’accessibilité et de référencement du W3C.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -83,40 +94,40 @@
                         <i class="fas fa-circle fa-xs"></i>
                     </div>
                     <div class="annee">
-                        <p>2019<br />Evreux</p>
+                        <p>2019 - Evreux</p>
                     </div>
                     <div class="etablissement">
-                        <h4>LYCEE LEOPOLD SEDAR SENGHOR</h4>
-                        <p>BAC Sciences et Technologies de Laboratoire option Biotechnologies</p>
+                        <h3>LYCEE LEOPOLD SEDAR SENGHOR</h3>
+                        <h4>BAC Sciences et Technologies de Laboratoire option Biotechnologies</h4>
                         <div class="taches">
-                            <p>
-                                Biochimie-biologie-biotechnologie<br />
-                                Sciences physiques et chimiques<br />
-                                Physiques-chimie et mathématiques.
-                            </p>
+                            <ul>
+                                <li>Biochimie-biologie-biotechnologie</li>
+                                <li>Sciences physiques et chimiques</li>
+                                <li>Physiques-chimie et mathématiques.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <h3><i class="fas fa-suitcase fa-lg"></i>EXPÉRIENCE PROFESSIONNELLE</h3>
-            <section class="experience_professionnelle">
+            <h2><i class="fas fa-suitcase fa-lg"></i>EXPÉRIENCE PROFESSIONNELLE</h2>
+            <div class="experience_professionnelle">
                 <div class="mise_en_page">
                     <div class="puce">
                         <i class="far fa-dot-circle fa-xs"></i>
                     </div>
                     <div class="annee">
-                        <p>2020<br />Evreux</p>
+                        <p>2020 - Evreux</p>
                     </div>
                     <div class="etablissement">
-                        <h4>BRICO E.Leclerc</h4>
-                        <p>Hôtesse de caisse</p>
+                        <h3>BRICO E.Leclerc</h3>
+                        <h4>Hôtesse de caisse</h4>
                         <div class="taches">
-                            <p>
-                                Accueil des clients<br />
-                                Encaissements<br />
-                                Comptage.<br />
-                            </p>
+                            <ul>
+                                <li>Accueil des clients</li>
+                                <li>Encaissements</li>
+                                <li>Comptage.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -126,42 +137,46 @@
                         <i class="fas fa-circle fa-xs"></i>
                     </div>
                     <div class="annee">
-                        <p>2019<br />Evreux</p>
+                        <p>2019 - Evreux</p>
                     </div>
                     <div class="etablissement">
-                        <h4>MGS SALES & MARKETING</h4>
-                        <p>Animatrice commerciale</p>
+                        <h3>MGS SALES & MARKETING</h3>
+                        <h4>Animatrice commerciale</h4>
                         <div class="taches">
-                            <p>
-                                Animer un événement pour attirer et captiver des clients : faire la démonstration du produit ou service, distribuer des flyers, échantillons ou coupons promotionnels<br />
-                                Obtenir une bonne visibilité aux produits et services<br />
-                                Présenter les caractéristiques du produit : qualités, performances, avantages…
-                            </p>
+                            <ul>
+                                <li>Animer un événement pour attirer et captiver des clients : faire la démonstration du produit ou service, distribuer des flyers, échantillons ou coupons promotionnels</li>
+                                <li>Obtenir une bonne visibilité aux produits et services</li>
+                                <li>Présenter les caractéristiques du produit : qualités, performances, avantages…</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <h3><i class="fas fa-pencil-alt fa-lg"></i>RECOMMANDATIONS</h3>
-            <section class="recommandation">
-                <div>
-                    <p>
-                        MAXIME KIEMAN<br />
-                        Directeur, Mon agence<br />
-                        Téléphone: +33 1 23 45 67 89<br />
+            <h2 id="recommandation"><i class="fas fa-pencil-alt fa-lg"></i>RECOMMANDATIONS</h2>
+            <div class="recommandation">
+                <div class="recommandation1">
+                    <address>
+                        MAXIME KIEMAN<br>
+                        Directeur, Mon agence<br>
+                        Téléphone: +33 1 23 45 67 89<br>
                         Email: name@email.com
-                    </p>
+                    </address>
                 </div>
                 <div class="recommandation2">
-                    <p>
+                    <address>
                         MAXIME KIEMAN<br />
                         Directeur, Mon agence<br />
                         Téléphone: +33 1 23 45 67 89<br />
                         Email: name@email.com
-                    </p>
+                    </address>
                 </div>
-            </section>
-        </div>
-    </main>
+            </div>
+
+            <footer>
+                <h5>Réa<span>lisé par Mathilde H</span>ain</h5>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
