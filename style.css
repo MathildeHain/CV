@@ -1,16 +1,39 @@
-/* Partie desktop */
+/* PARTIE DESKTOP */
 
+/*Paramètres généraux*/
 body {
     font-family: arial, serif, sans-serif;
-    border: 1px solid #607D8B;
     margin: auto;
-    max-width: 900px;
+    min-width: 100%;
+
 }
 
-/*HEADER*/
+/*Header*/
 header {
     display: flex;
 }
+
+/*Titres*/
+h1 {
+    font-weight: lighter;
+    padding-top: 30%;
+    padding-left: 40%;
+    min-width: 100%;
+    font-size: 40px;
+}
+
+    /*span*/
+    .color {
+        color: #607D8B;
+    }
+
+    .border {
+        border-bottom: 2px solid #607D8B;
+    }
+
+    .etudiante {
+        font-size: 20px;
+    }
 
 /*Photo*/
 .photo {
@@ -23,7 +46,7 @@ header {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2.5px solid #37474F;
+    border: 2.5px solid #455A64;
     overflow: hidden;
     margin: auto;
 }
@@ -32,268 +55,505 @@ header {
     width: 205px;
 }
 
-/*Titres*/
-.titre {
-    width: 65%;
-    line-height: 110%;
+/*Navbar*/
+nav {
+    display: none;
 }
 
-h1 {
-    font-size: 250%;
-    padding: 15% 0 0 7%;
-    font-weight: lighter;
-}
-
-    h1 > span {
-        color: #607D8B;
-        font-weight: bold;
-        letter-spacing: 1.5px;
-    }
-
-h2 {
-    color: #2d3a40;
-    padding-left: 7%;
-    letter-spacing: 0.5px;
-}
-
-    h2 > span {
-        text-decoration: underline;
-        text-decoration-color: #607D8B;
-        text-underline-position: under;
-    }
-
-/*BLOC GAUCHE*/
-main {
+/*Contenu*/
+.contenu {
     display: flex;
 }
 
-.bloc_gauche {
-    width: 35%;
-    background-color: #607D8B;
-}
+    /*Aside*/
+    aside {
+        background-color: #607D8B;
+        max-width: 34.95%;
+    }
 
-    .bloc_gauche h3 {
+    aside h2 {
+        text-align: center;
         background-color: #EEEEEE;
         color: #607D8B;
-        text-align: center;
-        padding: 4%;
-        margin: 0;
-        font-size: 120%;
-        border-right: 1px solid #607D8B;
+        font-size: 20px;
+        font-weight: lighter;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
 
-address {
-    font-style: normal;
-    padding: 10% 15% 15% 15%;
-    line-height: 1.2;
-    color: #EEEEEE;
-}
-
-a {
-    text-decoration: none;
-    color: #E0E0E0;
-}
-
-.informations > p {
-    padding: 10% 15% 125% 15%;
-    line-height: 1.5;
-    text-align: justify;
-    color: #EEEEEE;
-}
-
-.icones {
-    display: flex;
-    flex-direction: row;
-    padding: 11%;
-}
-
-.icone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    color: #fff;
-    margin: auto;
-}
-
-/*BLOC DROIT*/
-.bloc_droit {
-    width: 65%;
-    padding: 3.5% 0 2% 0;
-    color: #455A64;
-}
-
-    .bloc_droit > h3 {
-        color: #000;
-        border-bottom: 1.3px solid #336699;
-        padding-bottom: 1%;
-        width: 90%;
-        margin: auto;
+    aside address {
+        font-style: normal;
+        padding: 10% 15% 15% 15%;
+        line-height: 1.2;
+        color: #EEEEEE;
     }
 
-h3 > i {
-    color: #455A64;
-    padding-right: 3%;
-}
-
-.formation, .experience_professionnelle {
-    padding: 2% 0 2% 0;
-}
-
-.mise_en_page {
-    display: flex;
-}
-
-.puce {
-    margin: 4% 2% 0 5%;
-}
-
-.annee {
-    margin: 1% 0 0 1%;
-}
-
-.etablissement {
-    padding-left: 15%;
-    width: 300px;
-}
-
-.taches {
-    font-size: 92%;
-    line-height: 1.5;
-}
-
-.recommandation {
-    display: flex;
-    justify-content: space-around;
-}
-
-/*Partie responsive*/
-
-@media all and (max-width: 800px) {
-
-    header {
-        flex-direction: column;
-    }
-
-    .photo {
-        width: 100%;
-        padding: 2% 0 2% 0;
-    }
-
-    .titre {
-        width: 95%;
-        text-align: center;
-    }
-
-    main {
-        flex-direction: column-reverse;
-    }
-
-    .bloc_droit {
-        width: 90%;
-        margin: auto;
-    }
-
-    .bloc_gauche {
-        width: 100%;
-    }
-
-    address {
-        padding: 5% 15% 5% 15%;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .recommandation {
-        padding: 4% 0 4% 5%
-    }
-
-    h1 {
-        padding-top: 5%;
-    }
-
-    h2 {
-        padding-bottom: 5%;
+    address a {
+        text-decoration: none;
+        color: #E0E0E0;
     }
 
     .informations > p {
-        padding: 8% 15% 8% 15%;
+        padding: 10% 15% 80% 15%;
+        line-height: 1.5;
+        text-align: justify;
+        color: #EEEEEE;
     }
-
-    .bloc_gauche h3 {
-        border-right: none;
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
+    
+    .icones {
+        display: flex;
+        flex-direction: row;
+        padding: 11%;
     }
-}
-
-@media all and (max-width: 500px) {
-
-    h1 {
-        font-size: 150%;
+    
+    .icone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        color: #fff;
+        margin: auto;
     }
+    
 
-    h2 {
-        font-size: 130%;
-    }
-
-    .puce {
-        margin: 5% 2% 0 5%;
-    }
-}
-
-@media all and (max-width: 450px) {
-
-    .bloc_droit > h3 {
-        font-size: 100%;
-    }
-
-    .puce {
-        margin: 6% 2% 0 5%;
-    }
-
-    .recommandation {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media all and (max-width: 355px) {
-
-    .photomathilde {
-        width: 150px;
-        height: 150px;
-    }
-
-    .taille_photo {
-        width: 150px;
-    }
-
-    h2 {
-        font-size: 120%;
-    }
-
-    .mise_en_page {
-        flex-direction: column;
-    }
-
-    .etablissement {
-        text-align: center;
-        max-width:70%;
-    }
-
-    .puce {
-        display: none;
-    }
-
-    .bloc_droit > h3 {
+    /*Main*/
+    main {
+        padding-left: 2%;
         width: 100%;
+        border-left: 1px solid #607D8B;
     }
+        /*Titres*/
+        main h2 {
+            font-size: 20px;
+            font-weight: lighter;
+            padding-left: 4%;
+            padding-bottom: 2%;
+            border-bottom: 2px solid #607D8B;
+            width: 80%;
+            margin: auto;
+            padding-top: 5%;
+        }
 
-    .annee {
+        main h3, main h4 {
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        h2 > i {
+            color: #455A64;
+            padding-right: 3%;
+        }
+
+        /*Formation et expérience professionnelle*/
+        .mise_en_page {
+            display: flex;
+            padding-left: 10%;
+        }
+
+        .puce {
+            margin: 4% 2% 0 5%;
+            margin-top: 2.9%;
+        }
+
+        .puce i {
+            color: #607D8B;
+        }
+        
+        .annee {
+            margin: 1% 0 0 1%;
+        }
+        
+        .etablissement {
+            padding-top: 1.5%;
+            padding-left: 5%;
+            width: 300px;
+        }
+        
+        .taches {
+            font-size: 92%;
+            line-height: 1.5;
+        }
+
+        .taches ul {
+            list-style: none;
+            padding-left: 0%;
+        }
+
+        .contenu ul {
+            width: 450px;
+        }
+
+        /*Recommandations*/
+        .recommandation {
+            display: flex;
+            padding-top: 5%;
+            justify-content: space-around;
+            margin-bottom: 6%;
+        }
+
+        .recommandation address {
+            font-style: normal;
+        }
+
+    /*Footer*/
+    footer {
         display: none;
     }
-}
+
+
+
+/*PARTIE RESPONSIVE*/
+
+    /*Tablette*/
+    @media screen and (max-width: 768px) and (min-width: 425px) {
+        /*Paramètres généraux*/
+        body {
+            border: none;
+            margin: 0%;
+            max-width: 100%;
+        }
+
+        html {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /*Navbar*/
+        nav {
+            display: block;
+        }
+
+        .headernav {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .menu h2 {
+            display: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #455A64;
+          }
+          nav li {
+            float: left;
+          }
+            nav li a {
+                display: block;
+                color: #EEEEEE;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+                nav li a:hover {
+                    background-color: #607D8B;
+                }
+
+        /*Header*/
+        header {
+        flex-direction: column;
+        }
+
+        .photo {
+            min-width: 100%;
+        }
+
+        h1 {
+            padding: 5% 0% 5% 0%;
+            margin: 0%;
+            text-align: center;
+        }
+
+        /*Contenu*/
+        .contenu {
+            flex-direction: column-reverse;
+        }
+
+        .puce {
+            margin-top: 0px;
+            padding-top: 3%;
+        }
+
+        .etablissement {
+            width: 70%;
+        }
+
+        /*Aside*/
+        aside {
+            min-width: 100%;
+        }
+
+        #contact {
+            margin-top: 0%;
+            border-top: 1px solid;
+        }
+
+        .contact address {
+            padding: 3% 0% 3% 10%;
+        }
+
+        .informations P {
+            padding-top: 3%;
+            padding-left: 10%;
+            padding-bottom: 3%;
+            padding-right: 10%;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .icones {
+            padding-top: 3%;
+            padding-left: 0px;
+            padding-bottom: 3%;
+            padding-right: 0px;
+        }
+
+        /*Footer*/
+        footer {
+            background-color: #607D8B;
+        }
+
+        footer h5 {
+            color: #EEEEEE;
+        }
+
+        footer span {
+            border-bottom: 1px solid #EEEEEE;
+        }
+    }
+
+    /*MOBILE L*/
+    @media screen and (max-width: 425px) and (min-width: 375px) {
+        /*Titres*/
+        main h2 {
+            text-align: center;
+            padding-left: 5%;
+            margin-left: 5%;
+            margin-right: 0px;
+        }
+        
+        .contenu h2 i {
+            display: none;
+        }
+
+        /*Formation et expérience professionnelle*/
+        .puce, .annee {
+            display: none;
+        }
+
+        .etablissement h3, .etablissement h4 {
+            text-align: center;
+            width: 100%;
+            padding-left: 10%;
+       }
+
+        .taches ul {
+            list-style: none;
+            width: 100%;
+            text-align: center;
+        }
+
+       /*Recommandations*/
+       .recommandation {
+           flex-direction: column;
+       }
+
+       .recommandation1 {
+            padding-bottom: 5%;
+            text-align: center;
+       }
+
+       .recommandation2 {
+           text-align: center;
+       }
+    }
+
+    /*MOBILE M*/
+    /*Paramètres généraux*/
+    @media screen and (max-width: 375px) and (min-width: 320px) {
+        /*Paramètres généraux*/
+        body {
+            border: none;
+            margin: 0%;
+            max-width: 100%;
+        }
+    
+        html {
+            margin: 0%;
+            padding: 0%;
+        }
+    
+        /*Nav*/
+        nav {
+            display: block;
+        }
+    
+        .headernav {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    
+        .menu h2 {
+            display: none;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #455A64;
+          }
+            nav li {
+                float: left;
+            }
+                nav li a {
+                    display: block;
+                    color: #EEEEEE;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                    nav li a:hover {
+                        background-color: #607D8B;
+                    }
+    
+        /*Header*/
+        header {
+        flex-direction: column;
+        }
+    
+        .photo {
+            min-width: 100%;
+        }
+    
+        h1 {
+            padding: 5% 0% 5% 0%;
+            margin: 0%;
+            text-align: center;
+        }
+    
+        /*Contenu*/
+        .contenu {
+            flex-direction: column-reverse;
+        }
+    
+        .puce {
+            margin-top: 0px;
+            padding-top: 3%;
+        }
+    
+        .etablissement {
+            width: 70%;
+        }
+    
+        /*Aside*/
+        aside {
+            min-width: 100%;
+        }
+    
+        #contact {
+            margin-top: 0%;
+            border-top: 1px solid;
+        }
+    
+        .contact address {
+            padding: 3% 0% 3% 10%;
+        }
+    
+        .informations P {
+            padding-top: 3%;
+            padding-left: 10%;
+            padding-bottom: 3%;
+            padding-right: 10%;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+    
+        .icones {
+            padding-top: 3%;
+            padding-left: 0px;
+            padding-bottom: 3%;
+            padding-right: 0px;
+        }
+    
+        /*Footer*/
+        footer {
+            background-color: #607D8B;
+        }
+    
+        footer h5 {
+            color: #EEEEEE;
+        }
+    
+        footer span {
+            border-bottom: 1px solid #EEEEEE;
+        }
+    }
+    
+    /*MOBILE S*/
+    @media screen and (max-width: 320px) and (min-width: 100px) {
+        /*Navbar*/
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu {
+            background-color: #455A64;
+        }
+        
+        /*Titres*/
+        h1 {
+            font-size: 25px;
+        }
+            .etudiante {
+                font-size: 20px;
+            }
+        
+        .contenu h2 {
+            font-size: 15px;
+            text-align: center;
+            padding-left: 0%
+        }
+        
+        /*Contenu*/
+        .contenu h2 i {
+            display: none;
+        }
+
+        /*Main*/
+        main {
+            text-align: center;
+        }
+
+        main ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        /*Formation et expérience professionnelle*/
+        .puce, .annee p {
+            display: none;
+        }
+
+        .mise_en_page {
+            min-width: 400px;
+        }
+
+        /*Recommandations*/
+        .recommandation {
+            flex-direction: column;
+        }
+
+        .recommandation1 {
+            padding-bottom: 7%;
+        }
+    }
