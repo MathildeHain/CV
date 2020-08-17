@@ -204,356 +204,583 @@ nav {
     }
 
 
-
 /*PARTIE RESPONSIVE*/
 
-    /*Tablette*/
-    @media screen and (max-width: 768px) and (min-width: 425px) {
-        /*Paramètres généraux*/
-        body {
-            border: none;
-            margin: 0%;
-            max-width: 100%;
-        }
+@media screen and (max-width: 834px) and (min-width: 636px) {
+    /*Navbar*/
+    nav {
+        display: block;
+    }
 
-        html {
-            margin: 0%;
-            padding: 0%;
-        }
+    .headernav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-        /*Navbar*/
-        nav {
+    .menu h2 {
+        display: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #455A64;
+      }
+      nav li {
+        float: left;
+      }
+        nav li a {
             display: block;
-        }
-
-        .headernav {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-
-        .menu h2 {
-            display: none;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #455A64;
-          }
-          nav li {
-            float: left;
-          }
-            nav li a {
-                display: block;
-                color: #EEEEEE;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-                nav li a:hover {
-                    background-color: #607D8B;
-                }
-
-        /*Header*/
-        header {
-        flex-direction: column;
-        }
-
-        .photo {
-            min-width: 100%;
-        }
-
-        h1 {
-            padding: 5% 0% 5% 0%;
-            margin: 0%;
-            text-align: center;
-        }
-
-        /*Contenu*/
-        .contenu {
-            flex-direction: column-reverse;
-        }
-
-        .puce {
-            margin-top: 0px;
-            padding-top: 3%;
-        }
-
-        .etablissement {
-            width: 70%;
-        }
-
-        /*Aside*/
-        aside {
-            min-width: 100%;
-        }
-
-        #contact {
-            margin-top: 0%;
-            border-top: 1px solid;
-        }
-
-        .contact address {
-            padding: 3% 0% 3% 10%;
-        }
-
-        .informations P {
-            padding-top: 3%;
-            padding-left: 10%;
-            padding-bottom: 3%;
-            padding-right: 10%;
-            margin-bottom: 0px;
-            margin-top: 0px;
-        }
-
-        .icones {
-            padding-top: 3%;
-            padding-left: 0px;
-            padding-bottom: 3%;
-            padding-right: 0px;
-        }
-
-        /*Footer*/
-        footer {
-            background-color: #607D8B;
-        }
-
-        footer h5 {
             color: #EEEEEE;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
+            nav li a:hover {
+                background-color: #607D8B;
+            }
 
-        footer span {
-            border-bottom: 1px solid #EEEEEE;
-        }
+    /*Header*/
+    header {
+        flex-direction: column;
     }
 
-    /*MOBILE L*/
-    @media screen and (max-width: 425px) and (min-width: 375px) {
-        /*Titres*/
-        main h2 {
-            text-align: center;
-            padding-left: 5%;
-            margin-left: 5%;
-            margin-right: 0px;
-        }
-        
-        .contenu h2 i {
-            display: none;
-        }
-
-        /*Formation et expérience professionnelle*/
-        .puce, .annee {
-            display: none;
-        }
-
-        .etablissement h3, .etablissement h4 {
-            text-align: center;
-            width: 100%;
-            padding-left: 10%;
-       }
-
-        .taches ul {
-            list-style: none;
-            width: 100%;
-            text-align: center;
-        }
-
-       /*Recommandations*/
-       .recommandation {
-           flex-direction: column;
-       }
-
-       .recommandation1 {
-            padding-bottom: 5%;
-            text-align: center;
-       }
-
-       .recommandation2 {
-           text-align: center;
-       }
+    .photo {
+        width: 100%;
     }
 
-    /*MOBILE M*/
-    /*Paramètres généraux*/
-    @media screen and (max-width: 375px) and (min-width: 320px) {
-        /*Paramètres généraux*/
-        body {
-            border: none;
-            margin: 0%;
-            max-width: 100%;
-        }
-    
-        html {
-            margin: 0%;
-            padding: 0%;
-        }
-    
-        /*Nav*/
-        nav {
+    h1 {
+        padding-top: 0px;
+        padding-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Main*/
+    .contenu {
+        flex-direction: column-reverse;
+    }
+
+    .contenu ul {
+        width: 100%;
+    }
+
+    main {
+        padding-left: 0px;
+        border-left-width: 0px;
+    }
+
+    .mise_en_page {
+        padding-left: 0px;
+        margin-left: 65px;
+    }
+
+    .annee p {
+        width: 120px;
+    }
+
+    .etablissement {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    /*Aside*/
+    aside {
+        min-width: 100%;
+    }
+
+    .contact {
+        margin-top: 0%;
+        border-top: 1px solid;
+    }
+
+    .contact address {
+        padding: 3% 0% 3% 10%;
+    }
+
+    .informations P {
+        padding-top: 3%;
+        padding-left: 10%;
+        padding-bottom: 3%;
+        padding-right: 10%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .icones {
+        padding: 1% 0% 1% 0%;
+    }
+
+    /*Footer*/
+    footer {
+        display: block;
+        background-color: #607D8B;
+    }
+
+    footer h5 {
+        color: #EEEEEE;
+        margin: 0%;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 635px) and (min-width: 426px) {
+    /*Navbar*/
+    nav {
+        display: block;
+    }
+
+    .headernav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menu h2 {
+        display: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #455A64;
+      }
+      nav li {
+        float: left;
+      }
+        nav li a {
             display: block;
-        }
-    
-        .headernav {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-    
-        .menu h2 {
-            display: none;
-        }
-    
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #455A64;
-          }
-            nav li {
-                float: left;
-            }
-                nav li a {
-                    display: block;
-                    color: #EEEEEE;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                }
-                    nav li a:hover {
-                        background-color: #607D8B;
-                    }
-    
-        /*Header*/
-        header {
-        flex-direction: column;
-        }
-    
-        .photo {
-            min-width: 100%;
-        }
-    
-        h1 {
-            padding: 5% 0% 5% 0%;
-            margin: 0%;
-            text-align: center;
-        }
-    
-        /*Contenu*/
-        .contenu {
-            flex-direction: column-reverse;
-        }
-    
-        .puce {
-            margin-top: 0px;
-            padding-top: 3%;
-        }
-    
-        .etablissement {
-            width: 70%;
-        }
-    
-        /*Aside*/
-        aside {
-            min-width: 100%;
-        }
-    
-        #contact {
-            margin-top: 0%;
-            border-top: 1px solid;
-        }
-    
-        .contact address {
-            padding: 3% 0% 3% 10%;
-        }
-    
-        .informations P {
-            padding-top: 3%;
-            padding-left: 10%;
-            padding-bottom: 3%;
-            padding-right: 10%;
-            margin-bottom: 0px;
-            margin-top: 0px;
-        }
-    
-        .icones {
-            padding-top: 3%;
-            padding-left: 0px;
-            padding-bottom: 3%;
-            padding-right: 0px;
-        }
-    
-        /*Footer*/
-        footer {
-            background-color: #607D8B;
-        }
-    
-        footer h5 {
             color: #EEEEEE;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
-    
-        footer span {
-            border-bottom: 1px solid #EEEEEE;
-        }
-    }
-    
-    /*MOBILE S*/
-    @media screen and (max-width: 320px) and (min-width: 100px) {
-        /*Navbar*/
-        nav {
-            display: flex;
-            justify-content: center;
-        }
-
-        .menu {
-            background-color: #455A64;
-        }
-        
-        /*Titres*/
-        h1 {
-            font-size: 25px;
-        }
-            .etudiante {
-                font-size: 20px;
+            nav li a:hover {
+                background-color: #607D8B;
             }
-        
-        .contenu h2 {
-            font-size: 15px;
-            text-align: center;
-            padding-left: 0%
-        }
-        
-        /*Contenu*/
-        .contenu h2 i {
-            display: none;
-        }
 
-        /*Main*/
-        main {
-            text-align: center;
-        }
-
-        main ul {
-            list-style: none;
-            padding-left: 0px;
-        }
-
-        /*Formation et expérience professionnelle*/
-        .puce, .annee p {
-            display: none;
-        }
-
-        .mise_en_page {
-            min-width: 400px;
-        }
-
-        /*Recommandations*/
-        .recommandation {
-            flex-direction: column;
-        }
-
-        .recommandation1 {
-            padding-bottom: 7%;
-        }
+    /*Header*/
+    header {
+        flex-direction: column;
     }
+
+    .photo {
+        width: 100%;
+    }
+
+    h1 {
+        padding-top: 0px;
+        padding-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Main*/
+    .contenu {
+        flex-direction: column-reverse;
+    }
+
+    .contenu ul {
+        width: 100%;
+    }
+
+    main {
+        padding-left: 0px;
+        border-left-width: 0px;
+    }
+
+    .mise_en_page {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .puce, .annee {
+        display: none;
+    }
+
+    .etablissement {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .formation, main {
+        text-align: center;
+    }
+
+    main h2 {
+        padding-left: 0px;
+    }
+
+    main h3 {
+        margin-bottom: 2%;
+    }
+
+    main h4 {
+        margin-top: 0%;
+    }
+
+    .recommandation {
+        flex-direction: column;
+    }
+
+    .recommandation1 {
+        margin-bottom: 5%;
+    }
+
+    /*Aside*/
+    aside {
+        min-width: 100%;
+    }
+
+    .contact {
+        margin-top: 0%;
+        border-top: 1px solid;
+    }
+
+    .contact address {
+        padding: 3% 0% 3% 10%;
+    }
+
+    .informations P {
+        padding-top: 3%;
+        padding-left: 10%;
+        padding-bottom: 3%;
+        padding-right: 10%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .icones {
+        padding: 1% 0% 1% 0%;
+    }
+
+    /*Footer*/
+    footer {
+        display: block;
+        background-color: #607D8B;
+    }
+
+    footer h5 {
+        color: #EEEEEE;
+        margin: 0%;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+    
+}
+
+@media screen and (max-width: 425px) and (min-width: 321px) {
+    /*Navbar*/
+    nav {
+        display: block;
+    }
+
+    .headernav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menu h2 {
+        display: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #455A64;
+      }
+      nav li {
+        float: left;
+      }
+        nav li a {
+            display: block;
+            color: #EEEEEE;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+            nav li a:hover {
+                background-color: #607D8B;
+            }
+
+    /*Header*/
+    header {
+        flex-direction: column;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    h1 {
+        padding-top: 0px;
+        padding-left: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /*Main*/
+    .contenu {
+        flex-direction: column-reverse;
+    }
+
+    .contenu ul {
+        width: 100%;
+    }
+
+    main {
+        padding-left: 0px;
+        border-left-width: 0px;
+    }
+
+    .mise_en_page {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .puce, .annee {
+        display: none;
+    }
+
+    .etablissement {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .formation, main {
+        text-align: center;
+    }
+
+    main h2 {
+        padding-left: 0px;
+    }
+
+    main h3 {
+        margin-bottom: 2%;
+    }
+
+    main h4 {
+        margin-top: 0%;
+    }
+
+    .recommandation {
+        flex-direction: column;
+    }
+
+    .recommandation1 {
+        margin-bottom: 5%;
+    }
+
+    .taches li {
+        padding: 0% 10% 0% 10%;
+    }
+
+    /*Aside*/
+    aside {
+        min-width: 100%;
+    }
+
+    .contact {
+        margin-top: 0%;
+        border-top: 1px solid;
+    }
+
+    .contact address {
+        padding: 3% 10% 3% 10%;
+    }
+
+    .informations p {
+        padding: 3% 10% 3% 10%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .icones {
+        padding: 1% 0% 1% 0%;
+    }
+
+    /*Footer*/
+    footer {
+        display: block;
+        background-color: #607D8B;
+    }
+
+    footer h5 {
+        color: #EEEEEE;
+        margin: 0%;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /*Navbar*/
+    nav {
+        display: block;
+    }
+
+    .headernav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menu h2 {
+        display: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #455A64;
+        display: flex;
+        justify-content: center;
+    }
+      nav li {
+        float: left;
+      }
+        nav li a {
+            display: block;
+            color: #EEEEEE;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+            nav li a:hover {
+                background-color: #607D8B;
+            }
+
+    /*Header*/
+    header {
+        flex-direction: column;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    h1 {
+        padding-top: 0px;
+        padding-left: 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .etudiante {
+        font-size: 17px;
+    }
+
+    /*Main*/
+    .contenu {
+        flex-direction: column-reverse;
+    }
+
+    .contenu ul {
+        width: 100%;
+    }
+
+    main {
+        padding-left: 0px;
+        border-left-width: 0px;
+    }
+
+    .contenu h2 i {
+        display: none;
+    }
+
+    .contenu h2 {
+        font-size: 17px;
+    }
+
+    .mise_en_page {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .puce, .annee {
+        display: none;
+    }
+
+    .etablissement {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .formation, main {
+        text-align: center;
+    }
+
+    main h2 {
+        padding-left: 0px;
+    }
+
+    main h3 {
+        margin-bottom: 2%;
+    }
+
+    main h4 {
+        margin-top: 0%;
+    }
+
+    .recommandation {
+        flex-direction: column;
+    }
+
+    .recommandation1 {
+        margin-bottom: 5%;
+    }
+
+    .taches li {
+        padding: 0% 10% 0% 10%;
+    }
+
+    /*Aside*/
+    aside {
+        min-width: 100%;
+    }
+
+    .contact {
+        margin-top: 0%;
+        border-top: 1px solid;
+    }
+
+    .contact address {
+        padding: 3% 10% 3% 10%;
+    }
+
+    .informations p {
+        padding: 3% 10% 3% 10%;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .icones {
+        padding: 1% 0% 1% 0%;
+    }
+
+    /*Footer*/
+    footer {
+        display: block;
+        background-color: #607D8B;
+    }
+
+    footer h5 {
+        color: #EEEEEE;
+        margin: 0%;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 6%;
+    }
+}
