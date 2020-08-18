@@ -291,12 +291,12 @@ nav {
         min-width: 100%;
     }
 
-    .contact {
+    #contact {
         margin-top: 0%;
         border-top: 1px solid;
     }
 
-    .contact address {
+    #contact address {
         padding: 3% 0% 3% 10%;
     }
 
@@ -437,12 +437,12 @@ nav {
         min-width: 100%;
     }
 
-    .contact {
+    #contact {
         margin-top: 0%;
         border-top: 1px solid;
     }
 
-    .contact address {
+    #contact address {
         padding: 3% 0% 3% 10%;
     }
 
@@ -589,12 +589,12 @@ nav {
         min-width: 100%;
     }
 
-    .contact {
+    #contact {
         margin-top: 0%;
         border-top: 1px solid;
     }
 
-    .contact address {
+    #contact address {
         padding: 3% 10% 3% 10%;
     }
 
@@ -751,12 +751,12 @@ nav {
         min-width: 100%;
     }
 
-    .contact {
+    #contact {
         margin-top: 0%;
         border-top: 1px solid;
     }
 
-    .contact address {
+    #contact address {
         padding: 3% 10% 3% 10%;
     }
 
