@@ -49,10 +49,12 @@ h1 {
     border: 2.5px solid #455A64;
     overflow: hidden;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .taille_photo {
-    width: 205px;
+    width: 427px;
 }
 
 /*Navbar*/
